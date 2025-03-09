@@ -50,13 +50,12 @@ export class CarouselFeaturesComponent {
       src: '../../../../assets/images/features/10-woocommerce.svg',
       alt: 'imagem do ícone do WooCommerce',
     },
-    // {
-    //   src: '../../../../assets/images/features/11-bubble.svg',
-    //   alt: 'imagem do ícone do Bubble',
-    // },
     {
       src: '../../../../assets/images/features/12-flutterflow.svg',
       alt: 'imagem do ícone do FlutterFlow',
     },
   ];
+
+  // Duplica as imagens para criar o efeito infinito
+  duplicatedImages = [...this.images, ...this.images];
 }

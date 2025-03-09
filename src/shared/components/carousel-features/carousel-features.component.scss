@@ -5,20 +5,18 @@
 
 .carousel-track {
   display: flex;
-  animation: scroll 20s linear infinite;
+  animation: scroll 15s linear infinite; // Ajuste a duração para controlar a velocidade
+  will-change: transform; // Melhora a performance da animação
 }
 
 .carousel-item {
   flex: 0 0 auto;
-  height: 150px;
+  width: 150px; // Define uma largura fixa para cada item
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 1.85rem;
-
-  @media (max-width: 576px) {
-    padding: 0 0.8rem !important;
-  }
+  padding: 0 10px;
+  margin-bottom: 3.75rem;
 }
 
 .carousel-item img {
@@ -26,17 +24,47 @@
   height: auto;
 }
 
+// Ajuste responsivo para o número de itens visíveis
+@media (max-width: 1200px) {
+  .carousel-item {
+    width: 120px; // Reduz a largura dos itens
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel-item {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    width: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item {
+    width: 60px;
+  }
+
+  .carousel-item img {
+    max-height: 2.5rem;
+  }
+}
+
+// Pausar a animação ao passar o mouse (opcional)
+.carousel-container:hover .carousel-track {
+  animation-play-state: paused;
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
-  }
-}
-
-@media (max-width: 576px) {
-  .carousel-item img {
-    max-height: 2.5rem;
+    transform: translateX(
+      -50%
+    ); // Ajustado para trabalhar com a duplicação no TS
   }
 }
