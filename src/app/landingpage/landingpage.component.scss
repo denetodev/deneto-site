@@ -1,6 +1,6 @@
-@use "../../../assets/styles/variables" as vars;
+@use "../../assets/styles/variables" as vars;
 
 .landing-page {
   background-color: vars.$color-platinum-light;
-  padding-top: 115px; 
+  padding-top: 115px;
 }
