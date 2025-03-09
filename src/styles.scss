@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@use "assets/styles/variables" as vars;
+@use "assets/styles/reset";
+@use "assets/styles/mixins" as mixins;
+
+@use "primeicons/primeicons.css" as primeicons;
+@use "primeflex/primeflex" as primeflex;
+
+body {
+  font-family: vars.$font-family-primary;
+}
