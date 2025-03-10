@@ -1,5 +1,5 @@
-@use "../../../assets/styles/variables" as vars;
 @use "sass:color";
+@use "../../../assets/styles/variables" as vars;
 
 .blog-pages {
   width: 100%;
@@ -79,7 +79,7 @@
 
   &:hover {
     transform: translateY(-5px);
-    background-color: adjust-color(vars.$color-primary-orange, $lightness: 42%);
+    background-color: color.adjust(vars.$color-primary-orange, $lightness: 10%);
     padding: 5px;
 
     .post-image::after {
