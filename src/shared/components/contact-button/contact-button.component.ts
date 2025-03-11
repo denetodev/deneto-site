@@ -27,7 +27,9 @@ export class ContactButtonComponent {
   constructor(private router: Router) {}
 
   navigateToLinksPage() {
-    this.router.navigate(['/links']);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(() => {
+      window.location.href = 'https://dott.bio/denetodev';
+    }, 180);
   }
 }

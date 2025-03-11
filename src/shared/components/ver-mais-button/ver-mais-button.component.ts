@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { Router } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
@@ -11,16 +10,12 @@ import { ButtonModule } from 'primeng/button';
   styleUrl: './ver-mais-button.component.scss',
 })
 export class VerMaisButtonComponent {
-  @Input() route: string = ''; // Propriedade de entrada para a rota de destino
+  @Input() externalUrl: string = '';
 
-  constructor(private router: Router) {}
-
-  // Método para navegar para a rota especificada
-  navigateToRoute(): void {
-    // Rola a página para o topo
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    if (this.route) {
-      this.router.navigate([this.route]);
+  navigateToExternalUrl(): void {
+    // Redireciona para a URL
+    if (this.externalUrl) {
+      window.location.href = this.externalUrl;
     }
   }
 }

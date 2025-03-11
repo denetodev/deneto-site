@@ -14,15 +14,17 @@ export class GroupButtonComponent {
   constructor(private router: Router, private scrollService: ScrollService) {}
 
   navigateToProjectPage(): void {
-    // Rola a página para o topo
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    this.router.navigate(['/project-page']);
+    setTimeout(() => {
+      window.location.href = 'https://deneto.com.br/portfolio';
+    }, 50);
   }
 
   // Método para navegar para a página de links
   navigateToLinksPage(): void {
-    // Rola a página para o topo
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    this.router.navigate(['/links']);
+    setTimeout(() => {
+      window.location.href = 'https://dott.bio/denetodev';
+    }, 50);
   }
 }
