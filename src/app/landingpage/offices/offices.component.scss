@@ -199,6 +199,14 @@
   .hire-section {
     .hire-title {
       font-size: vars.$font-size-heading-1;
+      
+      .highlight {
+        display: inline;
+        
+        br {
+          display: none;
+        }
+      }
     }
   }
 }
