@@ -3,4 +3,8 @@
 .landing-page {
   background-color: vars.$color-platinum-light;
   padding-top: 115px;
+
+  @media (max-width: 576px) {
+    padding-top: 65px;
+  }
 }

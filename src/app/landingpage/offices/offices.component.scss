@@ -92,6 +92,7 @@
     color: vars.$color-gray;
     line-height: 1.2;
     margin-bottom: 2rem;
+    text-align: justify;
   }
 }
 
@@ -132,11 +133,11 @@
       font-size: vars.$font-size-large;
 
       &:hover {
-        border: 2px vars.$color-primary-orange solid;
+        border: 2px vars.$color-primary-orange solid !important;
         background-color: color.adjust(
           vars.$color-primary-orange,
           $lightness: 45%
-        );
+        ) !important;
 
         .p-button-label {
           color: vars.$color-primary-orange;

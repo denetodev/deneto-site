@@ -3,7 +3,7 @@
 :host ::ng-deep {
   .home-container {
     position: relative;
-    min-height: 82vh;
+    min-height: 84vh;
     padding: 2rem 0 0;
     background-color: vars.$color-platinum-light;
     display: flex;
@@ -150,6 +150,7 @@
         margin-bottom: 80px;
         z-index: 3;
         transform: translateY(50px);
+        
       }
     }
   }
@@ -240,7 +241,7 @@
     }
 
     .home-container {
-      min-height: 60vh;
+      min-height: 62vh;
     }
 
     .home-container .content-wrapper {

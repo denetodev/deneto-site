@@ -28,13 +28,13 @@ export class OfficesComponent {
       icon: 'pi pi-globe',
       title: 'Sites e Landing Pages',
       description:
-        'Sites institucionais e páginas de vendas otimizadas para conversão. Design moderno, alta performance no Google, integração com análise de dados e ferramentas de marketing. Desenvolvimento com WordPress e tecnologias modernas.',
+        'Sites institucionais e páginas de vendas. Design moderno, alta performance no Google, integração com análise de dados e ferramentas de marketing. Desenvolvimento com WordPress ou Angular além de tecnologias modernas.',
     },
     {
       icon: 'pi pi-mobile',
       title: 'Aplicativos Mobile',
       description:
-        'Apps mobile multiplataforma desenvolvidos com Bubble.io. Sem código nativo, mais agilidade na entrega e facilidade nas atualizações. Integração com APIs, autenticação, notificações push e features personalizadas.',
+        'Apps mobile multiplataforma desenvolvidos com FlutterFlow. Sem código nativo, mais agilidade na entrega e facilidade nas atualizações. Integração com APIs, autenticação, notificações push e features personalizadas.',
     },
   ];
 }

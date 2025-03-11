@@ -5,7 +5,7 @@
   .container {
     display: inline-flex;
     padding: 6px;
-    border: 1px solid rgba(vars.$color-black, 0.6);
+    border: 2px solid rgba(color.adjust(vars.$color-black, $alpha: -0.5), 0.2);
     background: rgba(color.adjust(vars.$color-taupe-gray, $alpha: -0.9), 0.1);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
@@ -17,7 +17,24 @@
     transition: all 0.2s ease;
   }
 
-  .gray-button .p-button-label {
-    color: vars.$color-black;
+  .gray-button {
+    border: 1px transparent solid !important; // Mesma largura da borda no hover
+
+    .p-button-label {
+      color: vars.$color-black;
+    }
+
+    &:hover {
+      border: 1px vars.$color-primary-orange solid !important;
+      border-radius: 30px;
+      background-color: color.adjust(
+        vars.$color-primary-orange,
+        $lightness: 45%
+      ) !important;
+
+      .p-button-label {
+        color: vars.$color-primary-orange;
+      }
+    }
   }
 }

@@ -7,7 +7,6 @@ import { Tag } from 'primeng/tag';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
-import { EmailInputComponent } from '../../../shared/components/email-input/email-input.component';
 import { VerMaisButtonComponent } from '../../../shared/components/ver-mais-button/ver-mais-button.component';
 import { BlogPost } from '../../../shared/interfaces/blogPost.interface';
 import { CommonModule } from '@angular/common';
@@ -25,15 +24,12 @@ import { CommonModule } from '@angular/common';
     ButtonModule,
     RouterModule,
     VerMaisButtonComponent,
-    EmailInputComponent,
     Tag,
   ],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.scss',
 })
 export class BlogComponent {
-  emailValue: string = '';
-
   blogPosts: BlogPost[] = [
     {
       image: '../../../../assets/images/blog-section/ios-tumb.png',
