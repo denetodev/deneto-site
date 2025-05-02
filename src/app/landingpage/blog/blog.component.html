@@ -64,8 +64,7 @@
             [style.backgroundImage]="'url(' + post.image + ')'"
           >
             <div class="arrow-icon">
-              <!-- TODO ajustar link para página correta -->
-              <a href="#" target="_blank">
+              <a [href]="post.postUrl" target="_blank">
                 <p-button
                   icon="pi pi-arrow-right"
                   size="large"

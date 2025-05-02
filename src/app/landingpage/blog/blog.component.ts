@@ -32,30 +32,37 @@ import { CommonModule } from '@angular/common';
 export class BlogComponent {
   blogPosts: BlogPost[] = [
     {
-      image: '../../../../assets/images/blog-section/ios-tumb.png',
-      title: 'As Tendências Mais Quentes em Desenvolvimento Web para 2024',
-      description:
-        'Descubra as tecnologias e práticas que estão moldando o futuro da web',
-      date: '13 Ago, 2025',
-      category: 'Landing Page',
-    },
-    {
-      image: '../../../../assets/images/blog-section/mobile-tumb.png',
+      image: '../../../assets/images/blog-section/aprendizado.jpg',
       title:
-        'Desenvolvimento Mobile: Dicas Essenciais para Criar Apps de Sucesso',
+        'Meu Verdadeiro Aprendizado em Programação: Uma Jornada de Desafios, Ilusões e Autodescoberta',
       description:
-        'Do design à implementação, tudo o que você precisa saber para desenvolver aplicativos móveis incríveis',
-      date: '08 Nov, 2025',
-      category: 'E-commerce',
+        'Como arquiteto, sempre conectei arte e técnica, usando tecnologia para transformar ideias abstratas em soluções práticas.',
+      postUrl:
+        'https://deneto.com.br/blog/o-que-atrasou-meu-aprendizado-em-programacao/',
+      date: '05 Fev, 2025',
+      category: 'Desenvolvimento',
     },
     {
-      image: '../../../../assets/images/blog-section/machine-learn-tumb.png',
+      image: '../../../assets/images/blog-section/livros-tecnologia.jpg',
+      title:
+        'Os Livros Que Mudaram Minha Forma de Aprender Programação (e a Vida)',
+      description:
+        'Retomei o hábito da leitura e Ultra Aprendizado, de Scott Young, transformou minha forma de aprender e estudar programação com métodos ativos e eficientes.',
+      postUrl:
+        'https://deneto.com.br/blog/melhores-livros-para-aprimorar-sua-carreira/',
+      date: '19 Fev, 2025',
+      category: 'Aprendizado',
+    },
+    {
+      image: '../../../assets/images/blog-section/inteligencia-artificial.jpg',
       title:
         'Como a Inteligência Artificial Está Transformando o Desenvolvimento de Software',
       description:
-        'Explorando o impacto da IA no desenvolvimento web e como você pode aproveitar essa tecnologia',
-      date: '14 Dez, 2025',
-      category: 'I.A.',
+        'Como artista que virou dev, percebi que a IA não resolve tudo — mas atua como ponte entre criatividade e lógica, traduzindo ideias em código.',
+      postUrl:
+        'https://deneto.com.br/blog/como-a-inteligencia-artificial-esta-transformando-o-desenvolvimento-de-software/',
+      date: '03 Fev, 2025',
+      category: 'I.A. & Automação',
     },
   ];
 

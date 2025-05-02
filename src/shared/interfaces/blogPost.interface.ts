@@ -4,4 +4,5 @@ export interface BlogPost {
   description: string;
   date: string;
   category: string;
+  postUrl: string;
 }
