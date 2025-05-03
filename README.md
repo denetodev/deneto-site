@@ -1,59 +1,103 @@
-# DenetoSite
+# Deneto Portfolio & Blog
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
+Bem-vindo ao repositório do Deneto Portfolio & Blog! Este site representa minha essência, minha jornada no desenvolvimento web e digital, e serve como uma plataforma para apresentar meus projetos e compartilhar minhas ideias e aprendizados.
 
-## Development server
+## Sobre o Projeto
 
-To start a local development server, run:
+Este projeto foi concebido para ser uma ponte digital, transformando ideias em resultados. Ele demonstra minhas habilidades, minha história na área de tecnologia, os serviços que ofereço, meus projetos desenvolvidos e também funciona como um espaço para compartilhar conhecimento através do blog.
+
+Mais que código, o site busca criar soluções digitais com foco em performance e conversão, visando sempre facilitar a vida dos usuários e impulsionar negócios.
+
+## Tecnologias Utilizadas
+
+- **Frontend**: Angular 19 com API Standalone, SCSS para estilização e PrimeNG 19 como framework de componentes
+- **Integração**: WordPress com Elementor
+- **Hospedagem**: Hostinger
+
+## Principais Funcionalidades
+
+### Portfólio
+
+Galeria de projetos desenvolvidos, incluindo:
+
+- Vatican Legacy
+- Menu Restaurante
+- Carbon Sphere
+- QR codes
+- Deneto Landingpage
+- Bistro Bliss
+
+### Blog
+
+Espaço para compartilhar conhecimento sobre:
+
+- Gestão de Projetos em TI
+- Programação & Desenvolvimento
+- Frameworks CSS
+- Bancos de Dados
+- Angular Standalone API
+- IA no Desenvolvimento
+- Design e Ferramentas
+- Desenvolvimento de Aplicativos
+- Aprendizado & Produtividade
+
+### Outras Seções
+
+- **Sobre Mim**: Minha história e jornada na tecnologia
+- **Contato**: Informações para comunicação
+
+## Estrutura do Projeto
 
 ```bash
-ng serve
+├── src
+│ ├── app # Componentes principais
+│ │ ├── landingpage # Módulo principal (blog, footer, header, etc.)
+│ │ └── ... # AppComponent, rotas, etc.
+│ ├── assets # Recursos estáticos
+│ │ ├── images # Imagens organizadas por categoria
+│ │ └── styles # SCSS globais (_mixins, _reset, _variables)
+│ ├── shared # Componentes reutilizáveis
+│ │ ├── components # Cards, botões, carrossel, typewriter
+│ │ ├── interfaces # Definições TypeScript
+│ │ └── services # Serviços compartilhados
+│ ├── index.html # HTML principal
+│ ├── main.ts # Ponto de entrada
+│ └── styles.scss # SCSS global
+└── ... (arquivos de configuração)
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Como Rodar o Projeto Localmente
 
-## Code scaffolding
+1. Clone o repositório:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+   ```bash
+   git clone [url-do-repositorio]
+   ```
 
-```bash
-ng generate component component-name
-```
+2. Navegue até a pasta do projeto:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+   ```bash
+   cd deneto-portfolio
+   ```
 
-```bash
-ng generate --help
-```
+3. Instale as dependências:
 
-## Building
+   ```bash
+   npm install
+   ```
 
-To build the project run:
+4. Inicie o servidor de desenvolvimento:
 
-```bash
-ng build
-```
+   ```bash
+   ng serve
+   ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+5. Acesse http://localhost:4200/
 
-## Running unit tests
+**Requisitos**: Node.js e Angular CLI instalados (versão compatível com Angular 19)
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## Contato
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Telefone**: +55 (61) 9 8617-0964
+- **E-mail**: contato@deneto.com.br
+- **Website**: [deneto.com.br](https://deneto.com.br)
