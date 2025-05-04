@@ -59,22 +59,22 @@
 
       <div class="posts-grid">
         <div *ngFor="let post of blogPosts" class="post-card">
-          <a [href]="post.postUrl" target="_blank" class="link-card">
-            <div
-              class="post-image"
-              [style.backgroundImage]="'url(' + post.image + ')'"
-            >
-              <div class="arrow-icon">
-                <a [href]="post.postUrl" target="_blank">
-                  <p-button
-                    icon="pi pi-arrow-right"
-                    size="large"
-                    [rounded]="true"
-                  ></p-button>
-                </a>
-              </div>
+          <div
+            class="post-image"
+            [style.backgroundImage]="'url(' + post.image + ')'"
+          >
+            <div class="arrow-icon">
+              <a [href]="post.postUrl" target="_blank">
+                <p-button
+                  icon="pi pi-arrow-right"
+                  size="large"
+                  [rounded]="true"
+                ></p-button>
+              </a>
             </div>
-            <div class="post-content">
+          </div>
+          <div class="post-content">
+            <a [href]="post.postUrl" target="_blank" class="link-card">
               <h3>{{ post.title }}</h3>
               <p>{{ post.description }}</p>
               <div class="post-meta">
@@ -88,8 +88,8 @@
                   value="{{ post.category }}"
                 />
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </div>
