@@ -72,7 +72,6 @@
   overflow: hidden;
   background: var(--surface-0);
   transition: all 0.3s ease;
-  cursor: pointer;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -93,6 +92,10 @@
     p {
       color: vars.$color-black;
     }
+  }
+
+  .link-card {
+    text-decoration: none;
   }
 
   .post-image {
@@ -118,7 +121,6 @@
       transition: all 0.3s ease;
 
       a,
-      
       p-button {
         transition: transform 0.3s ease, background-color 0.3s ease,
           color 0.3s ease;

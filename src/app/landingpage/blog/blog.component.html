@@ -59,35 +59,37 @@
 
       <div class="posts-grid">
         <div *ngFor="let post of blogPosts" class="post-card">
-          <div
-            class="post-image"
-            [style.backgroundImage]="'url(' + post.image + ')'"
-          >
-            <div class="arrow-icon">
-              <a [href]="post.postUrl" target="_blank">
-                <p-button
-                  icon="pi pi-arrow-right"
-                  size="large"
-                  [rounded]="true"
-                ></p-button>
-              </a>
-            </div>
-          </div>
-          <div class="post-content">
-            <h3>{{ post.title }}</h3>
-            <p>{{ post.description }}</p>
-            <div class="post-meta">
-              <div class="date-inline">
-                <i class="pi pi-calendar"></i>
-                <span class="date">{{ post.date }}</span>
+          <a [href]="post.postUrl" target="_blank" class="link-card">
+            <div
+              class="post-image"
+              [style.backgroundImage]="'url(' + post.image + ')'"
+            >
+              <div class="arrow-icon">
+                <a [href]="post.postUrl" target="_blank">
+                  <p-button
+                    icon="pi pi-arrow-right"
+                    size="large"
+                    [rounded]="true"
+                  ></p-button>
+                </a>
               </div>
-              <p-tag
-                class="category"
-                severity="warn"
-                value="{{ post.category }}"
-              />
             </div>
-          </div>
+            <div class="post-content">
+              <h3>{{ post.title }}</h3>
+              <p>{{ post.description }}</p>
+              <div class="post-meta">
+                <div class="date-inline">
+                  <i class="pi pi-calendar"></i>
+                  <span class="date">{{ post.date }}</span>
+                </div>
+                <p-tag
+                  class="category"
+                  severity="warn"
+                  value="{{ post.category }}"
+                />
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
