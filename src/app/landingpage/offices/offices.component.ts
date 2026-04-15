@@ -19,22 +19,22 @@ import { CarouselFeaturesComponent } from '../../../shared/components/carousel-f
 export class OfficesComponent {
   services = [
     {
-      icon: 'pi pi-code',
-      title: 'Desenvolvimento Web',
+      icon: 'pi pi-comments',
+      title: 'Atendimento Inteligente no WhatsApp',
       description:
-        'Sistemas web robustos e escaláveis utilizando Angular e Spring Boot. APIs REST, integrações com banco de dados, autenticação segura e interface responsiva. Desenvolvimento completo desde o front-end até o back-end.',
+        'Seu WhatsApp respondendo, qualificando e agendando leads automaticamente — 24 horas por dia, sem você precisar estar online. Ideal para clínicas, consultórios, advogados, fotógrafos, tatuadores e qualquer negócio onde o primeiro contato define se o cliente fica ou vai embora.',
     },
     {
-      icon: 'pi pi-globe',
-      title: 'Sites e Landing Pages',
+      icon: 'pi pi-cog',
+      title: 'Automação de Processos',
       description:
-        'Sites institucionais e páginas de vendas. Design moderno, alta performance no Google, integração com análise de dados e ferramentas de marketing. Desenvolvimento com WordPress ou Angular além de tecnologias modernas.',
+        'Tarefas repetitivas que tomam seu tempo e atenção viram fluxos automáticos. Notificações, integrações entre sistemas, relatórios, follow-ups — tudo rodando sem intervenção manual. Você foca no que gera valor, o processo cuida do resto.',
     },
     {
-      icon: 'pi pi-mobile',
-      title: 'Aplicativos Mobile',
+      icon: 'pi pi-search',
+      title: 'Consultoria e Diagnóstico Digital',
       description:
-        'Apps mobile multiplataforma desenvolvidos com FlutterFlow. Sem código nativo, mais agilidade na entrega e facilidade nas atualizações. Integração com APIs, autenticação, notificações push e features personalizadas.',
+        'Antes de construir qualquer coisa, entendemos juntos onde está o problema real. Mapeio seus processos, identifico os gargalos e apresento um plano concreto — com o que resolver primeiro, o que vai gerar mais resultado e o que não vale a pena automatizar agora.',
     },
   ];
 }

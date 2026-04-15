@@ -12,47 +12,51 @@ export class CarouselFeaturesComponent {
   images = [
     {
       src: '../../../../assets/images/features/1-git.svg',
-      alt: 'imagem do ícone do Git',
+      alt: 'Git',
     },
     {
       src: '../../../../assets/images/features/2-github.svg',
-      alt: 'imagem do ícone do GitHub',
+      alt: 'GitHub',
     },
     {
       src: '../../../../assets/images/features/3-javascript.svg',
-      alt: 'imagem do ícone do JavaScript',
+      alt: 'JavaScript',
     },
     {
       src: '../../../../assets/images/features/4-typescript.svg',
-      alt: 'imagem do ícone do TypeScript',
+      alt: 'TypeScript',
     },
     {
       src: '../../../../assets/images/features/5-java.svg',
-      alt: 'imagem do ícone do Java',
+      alt: 'Java',
     },
     {
       src: '../../../../assets/images/features/6-angular.svg',
-      alt: 'imagem do ícone do Angular',
+      alt: 'Angular',
     },
     {
       src: '../../../../assets/images/features/7-spring.svg',
-      alt: 'imagem do ícone do Spring Boot',
+      alt: 'Spring Boot',
     },
     {
-      src: '../../../../assets/images/features/8-wordpress.svg',
-      alt: 'imagem do ícone do WordPress',
+      src: '../../../../assets/images/features/n8n.svg',
+      alt: 'N8N',
     },
     {
-      src: '../../../../assets/images/features/9-elementor.svg',
-      alt: 'imagem do ícone do Elementor',
+      src: '../../../../assets/images/features/postgresql.svg',
+      alt: 'PostgreSQL',
     },
     {
-      src: '../../../../assets/images/features/10-woocommerce.svg',
-      alt: 'imagem do ícone do WooCommerce',
+      src: '../../../../assets/images/features/powerbi.svg',
+      alt: 'Power BI',
     },
     {
-      src: '../../../../assets/images/features/12-flutterflow.svg',
-      alt: 'imagem do ícone do FlutterFlow',
+      src: '../../../../assets/images/features/sfmc.svg',
+      alt: 'Salesforce Marketing Cloud',
+    },
+    {
+      src: '../../../../assets/images/features/whatsapp.svg',
+      alt: 'WhatsApp API',
     },
   ];
 

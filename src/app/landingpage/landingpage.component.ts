@@ -7,6 +7,7 @@ import { BlogComponent } from './blog/blog.component';
 import { OfficesComponent } from './offices/offices.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ConteudoComponent } from './conteudo/conteudo.component';
 
 @Component({
   selector: 'app-landingpage',
@@ -20,6 +21,7 @@ import { FooterComponent } from './footer/footer.component';
     BlogComponent,
     HeaderComponent,
     FooterComponent,
+    ConteudoComponent,
   ],
   templateUrl: './landingpage.component.html',
   styleUrl: './landingpage.component.scss',

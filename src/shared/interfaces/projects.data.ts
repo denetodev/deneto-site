@@ -3,42 +3,42 @@ import { Project } from './project.interface';
 export const PROJECTS: Project[] = [
   {
     id: '1',
-    title: 'Vatican Legacy',
+    title: 'Atendimento IA — Estúdio de Tatuagem',
     description:
-      'Landing page responsiva em homenagem ao Papa Francisco, com design moderno e estrutura organizada para destacar sua trajetória de forma elegante e envolvente.',
+      'Automação completa do atendimento via WhatsApp para uma tatuadora: qualificação de leads, resposta automática 24h e agendamento sem intervenção manual. Case real, resultado documentado.',
     image: '../../assets/images/card-challenge/vatican-legacy.png',
-    githubUrl: 'https://github.com/denetodev/vatican-legacy',
-    siteUrl: 'https://vatican-legacy.vercel.app/',
+    githubUrl: 'https://github.com/denetodev',
+    siteUrl: 'https://www.youtube.com/@denetodev',
     isHovered: false,
   },
   {
     id: '2',
+    title: 'Atendimento IA — Fotografia',
+    description:
+      'Implementação de atendimento inteligente com IA para fotógrafa profissional. Fluxo automatizado de qualificação, resposta a dúvidas frequentes e captura de leads. Em andamento.',
+    image: '../../assets/images/card-challenge/carbon-sphere.png',
+    githubUrl: 'https://github.com/denetodev',
+    siteUrl: 'https://www.youtube.com/@denetodev',
+    isHovered: false,
+  },
+  {
+    id: '3',
     title: 'Carbon Sphere',
     description:
-      'Landing page moderna para uma plataforma que une blockchain e IA, promovendo o acesso democrático ao mercado de créditos de carbono. Conecta empresas, projetos ambientais e investidores em um ecossistema digital.',
+      'Landing page moderna para uma plataforma que une blockchain e IA, promovendo o acesso democrático ao mercado de créditos de carbono.',
     image: '../../assets/images/card-challenge/carbon-sphere.png',
     githubUrl: 'https://github.com/denetodev/Carbon-Sphere-LandingPage',
     siteUrl: 'https://carbon-sphere.vercel.app/home',
     isHovered: false,
   },
   {
-    id: '3',
-    title: 'Bistro Bliss',
-    description:
-      'Site moderno e funcional para um restaurante fictício, com design elegante, navegação de cardápio, reservas online e blog para uma experiência digital completa.',
-    image: '../../assets/images/card-challenge/bistro-bliss.png',
-    githubUrl: 'https://github.com/denetodev/bistro-bliss',
-    siteUrl: 'https://bistro-bliss-amber.vercel.app/',
-    isHovered: false,
-  },
-  {
     id: '4',
-    title: 'Menu Restaurante',
+    title: 'Vatican Legacy',
     description:
-      'Aplicação web responsiva que simula pedidos online, com seleção de pratos, ajustes de quantidades e cálculo interativo do total.',
-    image: '../../assets/images/card-challenge/menu-restaurante.png',
-    githubUrl: 'https://github.com/denetodev/BootCampDevJr_Projeto-Menu',
-    siteUrl: 'https://boot-camp-dev-jr-projeto-menu.vercel.app/',
+      'Landing page responsiva com design moderno e estrutura organizada. Projeto de estudo em Angular com foco em performance e experiência visual.',
+    image: '../../assets/images/card-challenge/vatican-legacy.png',
+    githubUrl: 'https://github.com/denetodev/vatican-legacy',
+    siteUrl: 'https://vatican-legacy.vercel.app/',
     isHovered: false,
   },
 ];

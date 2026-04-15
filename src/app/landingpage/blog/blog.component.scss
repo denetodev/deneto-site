@@ -4,6 +4,7 @@
 .blog-pages {
   width: 100%;
   background-color: white;
+  border-top: 1px solid #e0e0e0;
 }
 
 .blog-section {
@@ -17,10 +18,24 @@
   margin-bottom: 4rem;
 
   h2 {
-    font-weight: vars.$font-weight-semibold;
-    font-size: 3.5rem;
+    font-weight: vars.$font-weight-bold;
+    font-size: 3rem;
     margin-bottom: 2rem;
     color: vars.$color-black;
+    position: relative;
+    padding-top: 1rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 3rem;
+      height: 4px;
+      background-color: vars.$color-primary-orange;
+      border-radius: 2px;
+    }
   }
 
   .highlight {
@@ -43,11 +58,24 @@
 
     .titles {
       h2 {
-        font-weight: vars.$font-weight-semibold;
-        font-size: 3.5rem;
+        font-weight: vars.$font-weight-bold;
+        font-size: 3rem;
         margin-bottom: 0;
         color: vars.$color-black;
         line-height: 1.2;
+        position: relative;
+        padding-top: 1rem;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 3rem;
+          height: 4px;
+          background-color: vars.$color-primary-orange;
+          border-radius: 2px;
+        }
       }
       .highlight {
         color: vars.$color-primary-orange;
@@ -147,7 +175,7 @@
     p {
       color: vars.$color-gray;
       margin-bottom: 2rem;
-      line-height: 1.2;
+      line-height: 1.6;
       font-weight: vars.$font-weight-semibold !important;
       font-size: vars.$font-size-base !important;
     }

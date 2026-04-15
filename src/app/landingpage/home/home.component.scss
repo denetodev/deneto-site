@@ -5,7 +5,7 @@
     position: relative;
     min-height: 84vh;
     padding: 2rem 0 0;
-    background-color: vars.$color-platinum-light;
+    background-color: vars.$color-darkblack;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +51,7 @@
           font-size: 3.5rem;
           font-weight: vars.$font-weight-semibold;
           margin-top: vars.$spacing-medium;
-          color: vars.$color-black;
+          color: white;
 
           .highlight {
             color: vars.$color-primary-orange;
@@ -62,7 +62,7 @@
           ::ng-deep app-typewriter {
             font-size: 2.5rem;
             font-weight: 700;
-            color: vars.$color-black;
+            color: white;
           }
         }
       }
@@ -107,14 +107,14 @@
           .number {
             font-size: vars.$font-size-heading-3;
             font-weight: vars.$font-weight-semibold;
-            color: vars.$color-black;
+            color: white;
             margin: vars.$spacing-tiny 0;
           }
 
           .label {
             font-size: vars.$font-size-small;
             font-weight: vars.$font-weight-semibold;
-            color: vars.$color-black;
+            color: vars.$color-gray;
           }
         }
       }

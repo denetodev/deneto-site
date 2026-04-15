@@ -7,7 +7,6 @@ import { Tag } from 'primeng/tag';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
-import { VerMaisButtonComponent } from '../../../shared/components/ver-mais-button/ver-mais-button.component';
 import { BlogPost } from '../../../shared/interfaces/blogPost.interface';
 import { CommonModule } from '@angular/common';
 
@@ -23,7 +22,6 @@ import { CommonModule } from '@angular/common';
     FormsModule,
     ButtonModule,
     RouterModule,
-    VerMaisButtonComponent,
     Tag,
   ],
   templateUrl: './blog.component.html',
@@ -32,9 +30,19 @@ import { CommonModule } from '@angular/common';
 export class BlogComponent {
   blogPosts: BlogPost[] = [
     {
+      image: '../../../assets/images/blog-section/inteligencia-artificial.jpg',
+      title:
+        'Por que automatizar o atendimento não é sobre tecnologia — é sobre tempo',
+      description:
+        'A maioria dos donos de negócio que me procura não sabe o que é N8N. Mas todos sabem que estão perdendo cliente porque não conseguem responder rápido o suficiente.',
+      postUrl: 'https://deneto.com.br/blog/',
+      date: '2026',
+      category: 'I.A. & Automação',
+    },
+    {
       image: '../../../assets/images/blog-section/aprendizado.jpg',
       title:
-        'Meu Verdadeiro Aprendizado em Programação: Uma Jornada de Desafios, Ilusões e Autodescoberta',
+        'Meu Verdadeiro Aprendizado em Programação: Uma Jornada de Desafios e Autodescoberta',
       description:
         'Como arquiteto, sempre conectei arte e técnica, usando tecnologia para transformar ideias abstratas em soluções práticas.',
       postUrl:
@@ -47,28 +55,13 @@ export class BlogComponent {
       title:
         'Os Livros Que Mudaram Minha Forma de Aprender Programação (e a Vida)',
       description:
-        'Retomei o hábito da leitura e Ultra Aprendizado, de Scott Young, transformou minha forma de aprender e estudar programação com métodos ativos e eficientes.',
+        'Retomei o hábito da leitura e Ultra Aprendizado, de Scott Young, transformou minha forma de aprender e estudar programação.',
       postUrl:
         'https://deneto.com.br/blog/melhores-livros-para-aprimorar-sua-carreira/',
       date: '19 Fev, 2025',
       category: 'Aprendizado',
     },
-    {
-      image: '../../../assets/images/blog-section/inteligencia-artificial.jpg',
-      title:
-        'Como a Inteligência Artificial Está Transformando o Desenvolvimento de Software',
-      description:
-        'Como artista que virou dev, percebi que a IA não resolve tudo — mas atua como ponte entre criatividade e lógica, traduzindo ideias em código.',
-      postUrl:
-        'https://deneto.com.br/blog/como-a-inteligencia-artificial-esta-transformando-o-desenvolvimento-de-software/',
-      date: '03 Fev, 2025',
-      category: 'I.A. & Automação',
-    },
   ];
 
   constructor(private router: Router) {}
-
-  navigateToBlogPage() {
-    this.router.navigate(['/blog-page']);
-  }
 }

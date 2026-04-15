@@ -2,6 +2,7 @@
 
 .projects-container {
   background-color: vars.$color-platinum-light;
+  border-top: 1px solid #e0e0e0;
 }
 
 .projects-header {
@@ -19,10 +20,23 @@
   }
 
   h2 {
-    font-weight: vars.$font-weight-semibold;
-    font-size: 3.5rem;
+    font-weight: vars.$font-weight-bold;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
     color: vars.$color-black;
+    position: relative;
+    padding-top: 1rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3rem;
+      height: 4px;
+      background-color: vars.$color-primary-orange;
+      border-radius: 2px;
+    }
 
     @media (max-width: 1140px) {
       font-size: vars.$font-size-heading-1;

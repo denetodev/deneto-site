@@ -34,17 +34,20 @@ export class HeaderComponent implements OnInit {
       command: () => this.navigateToLandingpage(),
     },
     {
-      label: 'Sobre Mim',
+      label: 'Serviços',
       command: () => this.scrollToSection('servicos'),
     },
     {
-      label: 'Portfólio',
-      command: () =>
-        (window.location.href = 'https://deneto.com.br/portfolio/'),
+      label: 'Cases',
+      command: () => this.scrollToSection('projetos'),
+    },
+    {
+      label: 'Conteúdo',
+      command: () => this.scrollToSection('conteudo'),
     },
     {
       label: 'Blog',
-      command: () => (window.location.href = 'https://deneto.com.br/blog'),
+      command: () => this.scrollToSection('blog'),
     },
   ];
 

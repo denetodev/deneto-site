@@ -1,0 +1,95 @@
+<section class="conteudo-section">
+  <div class="conteudo-container">
+
+    <!-- Header da seção -->
+    <div class="conteudo-header">
+      <div class="conteudo-title">
+        <h2>
+          Veja o processo
+          <span class="highlight">na prática</span>
+        </h2>
+        <p class="conteudo-description">
+          Não crio conteúdo de tecnologia genérico. Documento o que faço de
+          verdade — um negócio real, um problema real, uma solução construída do
+          início ao fim. O trabalho vem primeiro. O conteúdo é consequência.
+        </p>
+      </div>
+
+      <div class="conteudo-ctas">
+        <a href="https://www.youtube.com/@denetodev" target="_blank">
+          <p-button
+            icon="pi pi-youtube"
+            label="Seguir no YouTube"
+            severity="danger"
+            [rounded]="true"
+          ></p-button>
+        </a>
+        <a href="https://www.instagram.com/denetodev" target="_blank">
+          <p-button
+            icon="pi pi-instagram"
+            label="Ver no Instagram"
+            variant="outlined"
+            severity="contrast"
+            [rounded]="true"
+          ></p-button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Grid de vídeos -->
+    <div class="videos-grid">
+      <a
+        *ngFor="let video of videos; let i = index"
+        [href]="video.youtubeUrl"
+        target="_blank"
+        class="video-card"
+      >
+        <!-- Thumbnail placeholder -->
+        <div class="video-thumbnail">
+          <div class="thumbnail-placeholder">
+            <div class="play-icon">
+              <i class="pi pi-youtube"></i>
+            </div>
+            <span class="coming-soon-label">Em breve</span>
+          </div>
+          <span class="video-tag">{{ video.tag }}</span>
+        </div>
+
+        <!-- Info do vídeo -->
+        <div class="video-info">
+          <h3 class="video-title">{{ video.title }}</h3>
+          <p class="video-description">{{ video.description }}</p>
+          <div class="video-link">
+            <span>Assistir no YouTube</span>
+            <i class="pi pi-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Banner Instagram -->
+    <div class="instagram-banner">
+      <div class="instagram-text">
+        <i class="pi pi-instagram"></i>
+        <div>
+          <h3>No Instagram: o processo em tempo real</h3>
+          <p>
+            Reels mostrando o bot funcionando, carrosséis de antes e depois,
+            bastidores de automação. Quando der errado também.
+          </p>
+        </div>
+      </div>
+      <a href="https://www.instagram.com/denetodev" target="_blank">
+        <p-button
+          label="@denetodev"
+          icon="pi pi-arrow-right"
+          iconPos="right"
+          variant="outlined"
+          severity="contrast"
+          [rounded]="true"
+        ></p-button>
+      </a>
+    </div>
+
+  </div>
+</section>

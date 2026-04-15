@@ -6,58 +6,71 @@
   cursor: default;
 
   &:hover {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
 
     ::ng-deep .p-card {
       border-color: vars.$color-primary-orange;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 12px 32px rgba(255, 98, 0, 0.15);
 
-      .icon-wrapper i {
-        transform: scale(1.1);
+      .icon-wrapper {
+        background-color: vars.$color-primary-orange;
+
+        i {
+          color: white;
+          transform: scale(1.1);
+        }
       }
     }
   }
 
   ::ng-deep .p-card {
-    border: 2px solid vars.$color-gray;
-    background-color: vars.$color-platinum-light;
-    border-radius: vars.$border-radius-large;
+    border: 1.5px solid #e0e0e0;
+    background-color: white;
+    border-radius: vars.$border-radius-xlarge;
     box-shadow: none;
     height: 100%;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 
     .p-card-body {
-      padding: vars.$spacing-large;
+      padding: 2rem;
     }
   }
 
   .card-content {
-    padding: vars.$spacing-large vars.$spacing-small;
     display: flex;
     flex-direction: column;
-    gap: vars.$spacing-tiny;
+    gap: vars.$spacing-medium;
   }
 
   .icon-wrapper {
-    margin-bottom: vars.$spacing-tiny;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(255, 98, 0, 0.1);
+    border-radius: vars.$border-radius-medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: vars.$spacing-small;
 
     i {
       color: vars.$color-primary-orange;
-      font-size: vars.$font-size-heading-2;
-      transition: transform 0.3s ease;
+      font-size: 1.3rem;
+      transition: transform 0.3s ease, color 0.3s ease;
     }
   }
 
   .service-title {
-    color: vars.$color-primary-orange;
-    font-size: vars.$font-size-xlarge;
+    color: vars.$color-black;
+    font-size: vars.$font-size-large;
     font-weight: vars.$font-weight-bold;
-    margin-bottom: vars.$spacing-tiny;
+    margin: 0;
+    line-height: 1.3;
   }
 
   .service-description {
-    color: vars.$color-taupe-gray;
-    line-height: 1.25;
+    color: vars.$color-gray;
+    line-height: 1.6;
     margin: 0;
     font-size: vars.$font-size-base;
   }

@@ -2,8 +2,9 @@
 @use "sass:color";
 
 .offices-page {
-  width: 100;
+  width: 100%;
   background-color: white;
+  border-top: 4px solid vars.$color-primary-orange;
 }
 
 .page-container {
@@ -19,25 +20,38 @@
 .services-header {
   display: flex;
   align-items: flex-start;
-  gap: 11rem;
+  gap: 8rem;
   margin-bottom: 3rem;
   text-align: left;
   max-width: 1200px;
 
   h2 {
-    font-weight: vars.$font-weight-semibold;
-    font-size: 3.5rem;
-    color: vars.$color-primary-orange;
+    font-weight: vars.$font-weight-bold;
+    font-size: 3rem;
+    color: vars.$color-black;
     white-space: nowrap;
+    position: relative;
+    padding-top: 1rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3rem;
+      height: 4px;
+      background-color: vars.$color-primary-orange;
+      border-radius: 2px;
+    }
   }
 
   .services-description {
-    font-weight: vars.$font-weight-semibold;
+    font-weight: vars.$font-weight-regular;
     font-size: vars.$font-size-large;
     color: vars.$color-gray;
-    line-height: 1.2;
+    line-height: 1.7;
     flex: 1;
-    margin: 0.5rem 0 0;
+    margin: 1.5rem 0 0;
   }
 }
 
@@ -76,10 +90,23 @@
   align-items: flex-start;
 
   .hire-title {
-    font-weight: vars.$font-weight-semibold;
-    font-size: 3.5rem;
+    font-weight: vars.$font-weight-bold;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
     color: vars.$color-black;
+    position: relative;
+    padding-top: 1rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3rem;
+      height: 4px;
+      background-color: vars.$color-primary-orange;
+      border-radius: 2px;
+    }
 
     .highlight {
       color: vars.$color-primary-orange;
@@ -90,33 +117,35 @@
     font-weight: vars.$font-weight-semibold;
     font-size: vars.$font-size-base;
     color: vars.$color-gray;
-    line-height: 1.2;
+    line-height: 1.7;
     margin-bottom: 2rem;
-    text-align: justify;
+    text-align: left;
   }
 }
 
 .metrics {
   display: flex;
   justify-content: start;
-  gap: 6rem;
+  gap: 4rem;
   margin-bottom: 2rem;
 
   .metric {
     display: flex;
     flex-direction: column;
     gap: vars.$spacing-tiny;
+    border-left: 3px solid vars.$color-primary-orange;
+    padding-left: 1rem;
 
     .metric-value {
-      font-size: vars.$font-size-heading-2;
-      font-weight: vars.$font-weight-semibold;
+      font-size: 2.5rem;
+      font-weight: vars.$font-weight-bold;
       color: vars.$color-black;
       line-height: 1;
     }
 
     .metric-label {
-      font-size: 1rem;
-      font-weight: 500;
+      font-size: vars.$font-size-small;
+      font-weight: vars.$font-weight-regular;
       color: vars.$color-gray;
       line-height: 1.4;
       max-width: 200px;
